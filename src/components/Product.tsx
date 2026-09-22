@@ -15,8 +15,7 @@ function Product(props: ProductProps) {
     <div className="product-card">
     <div className="product-image">
     <img src={props.src} alt={props.prodname} loading="lazy" />
-    <button className="heart-btn">❤️</button>
-        </div>
+    </div>
     <div className="rating-stars">{'★'.repeat(Math.floor(props.rating))}
     {props.rating % 1 !== 0 && '★'}
         </div>
